@@ -13,10 +13,10 @@ def indexWebblog(request):
                    {'pathPic': "webblogPics/picSeminar2.jpg", 'linkpage': "seminarBWebblog", 'content' : "สัมมนา 99709"},
                    {'pathPic': "webblogPics/pic3.jpg", 'linkpage': "tourismPhuket", 'content' : "แหล่งท่องเที่ยวจังหวัดภูเก็ต"},
                    {'pathPic': "webblogPics/picSeminar3.jpg", 'linkpage': "researchSources", 'content' : "แหล่งค้นคว้าวิจัย"},
-                   {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "seminar99708Webblog", 'content' : "สัมมนา 99708"},
-                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminar99708Webblog", 'content' : "สัมมนา 99708"},
-                   {'pathPic': "webblogPics/pic1.jpg", 'linkpage': "seminar99708Webblog", 'content' : "สัมมนา 99708"},
-                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminar99708Webblog", 'content' : "สัมมนา 99708"},
+                   {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
+                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
+                   {'pathPic': "webblogPics/pic1.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
+                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
                    
                 ]
     
