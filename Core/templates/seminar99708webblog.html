@@ -1,0 +1,37 @@
+{% extends './base/webblogTemplate.html'%}
+{% load static%}
+
+{% block header %}
+    <div>  
+        <h1 class="display-3"><img src="{% static '/webblogPics/sciLogo.png' %}" alt="pics"></h1>      
+        <img class="" src="{% static '/webblogPics/sciteacher.png' %}" alt="headerPic" width="1280" height="512">
+    </div>    
+{% endblock header %}
+
+{% block content %}
+    {% for image in Images %}
+    <div class="col mb-5">
+        <div class="card h-100">
+            <!-- Product image src="{{image}}"src="{% static 'webblogPics/pic1.jpg' %}" -->
+            <img class="card-img-top" src="{% static image %}" alt="..." />        
+            <!-- Product details-->
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Fancy Product</h5>
+                    <!-- Product price-->
+                    $40.00 - $80.00
+                </div>
+            </div>                
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><!--href="{{ImageLink}}"-->
+                    <a class="btn btn-outline-dark mt-auto" href="">View options</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+   
+
+{% endblock %}
