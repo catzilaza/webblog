@@ -10,7 +10,7 @@ def indexWebblog(request):
     ImageOfHeader = ["webblogPics/scilogo.png", "webblogPics/sciteacher.png"]
     ImagesOfItem  =   [    
                    {'pathPic': "webblogPics/picSeminar1.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
-                   {'pathPic': "webblogPics/picSeminar2.jpg", 'linkpage': "seminar99709Webblog", 'content' : "สัมมนา 99709"},
+                   {'pathPic': "webblogPics/picSeminar2.jpg", 'linkpage': "seminarBWebblog", 'content' : "สัมมนา 99709"},
                    {'pathPic': "webblogPics/pic3.jpg", 'linkpage': "tourismPhuket", 'content' : "แหล่งท่องเที่ยวจังหวัดภูเก็ต"},
                    {'pathPic': "webblogPics/picSeminar3.jpg", 'linkpage': "researchSources", 'content' : "แหล่งค้นคว้าวิจัย"},
                    {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "seminar99708Webblog", 'content' : "สัมมนา 99708"},
@@ -47,7 +47,7 @@ def seminarAWebblog(request):
             'Images'  : ImagesOfItem,
           })
     
-def seminar99709Webblog(request):
+def seminarBWebblog(request):
 
   ImagesOfItem  =   [    
                    "webblogPics/picSeminar99709Dec.jpg",
@@ -61,7 +61,7 @@ def seminar99709Webblog(request):
                    
                 ]
 
-  return render(request, 'seminar99709Webblog.html', 
+  return render(request, 'seminarBWebblog.html', 
           {
             'Images'  : ImagesOfItem,
           })

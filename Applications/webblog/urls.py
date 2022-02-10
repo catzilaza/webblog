@@ -1,10 +1,10 @@
 from django.urls import path
-from Applications.webblog.views import indexWebblog, seminarAWebblog, seminar99709Webblog, tourismPhuket, researchSources
+from Applications.webblog.views import indexWebblog, seminarAWebblog, seminarBWebblog, tourismPhuket, researchSources
 
 urlpatterns = [
     path('', indexWebblog, name='indexWebblog'),
     path('seminarAWebblog/', seminarAWebblog, name='seminarAWebblog'),
-    path('seminar99709Webblog/', seminar99709Webblog, name='seminar99709Webblog'),
+    path('seminarBWebblog/', seminarBWebblog, name='seminarBWebblog'),
     path('tourismPhuket/', tourismPhuket, name='tourismPhuket'),
     path('researchSources/', researchSources, name='researchSources'),
 
