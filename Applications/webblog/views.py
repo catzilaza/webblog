@@ -119,6 +119,7 @@ def WebblogFormPage(request):
   return render(request, 'WebblogFormPage.html', context)
 
 def WebblogFormDetailPage(request):
-  contexts = {}
-  contexts['datas'] = WebblogFormModel.objects.all()  
-  return render(request, 'WebblogFormDetailPage.html', contexts)
+  #contexts = {}
+  #contexts['datas'] = WebblogFormModel.objects.all()  
+  #return render(request, 'WebblogFormDetailPage.html', contexts)
+  return render(request, 'WebblogFormDetailPage.html')
