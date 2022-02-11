@@ -1,0 +1,187 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "webblog",
+        "model": "webblogformmodel"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "webblog",
+        "model": "students"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cah1v5u537ze3wxq75n0v92hlztxypvp",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHaEF802Z3mdACyzBSYQlY1dR7h5bcpG0b2bemwXc1hq2TkuYMrsywS6_W8T0pHaA_MB2n3ma27pMkR8KP2nn45zpdTvdv4OKve51QR0FARVwRgGhd8k4by1Eic4npcFZrbL1RSokEIMcgJyibMUeGc0-X9pbN04:1nIOGF:erT_JU-wjtHOyJcLHqneptqwmbzGJrKA-iLRwO3-SXk",
+        "expire_date": "2022-02-25T05:14:23.820Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hu1isytgzu0sxlggxekogqz4yqft88e8",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHaEF802Z3mdACyzBSYQlY1dR7h5bcpG0b2bemwXc1hq2TkuYMrsywS6_W8T0pHaA_MB2n3ma27pMkR8KP2nn45zpdTvdv4OKve51QR0FARVwRgGhd8k4by1Eic4npcFZrbL1RSokEIMcgJyibMUeGc0-X9pbN04:1nIRJ6:Iw3mm8WAktVXVa4a1_hqK3-rK7tTpxjw9Ln0UPhQ_Bg",
+        "expire_date": "2022-02-25T08:29:32.943Z"
+    }
+},
+{
+    "model": "webblog.webblogformmodel",
+    "pk": 1,
+    "fields": {
+        "topic": "topic 1",
+        "content": "content content content\r\n\r\ncontent content content\r\n\r\ncontent content content",
+        "name": "Deo catcat",
+        "email": "silverlighter@hotmail.com",
+        "post_date": "2022-02-11"
+    }
+},
+{
+    "model": "webblog.webblogformmodel",
+    "pk": 2,
+    "fields": {
+        "topic": "topic 2",
+        "content": "content topic 2 content topic 2 content topic 2",
+        "name": "Somo CatCat",
+        "email": "silverlighter@gmail.com",
+        "post_date": "2022-02-11"
+    }
+},
+{
+    "model": "webblog.webblogformmodel",
+    "pk": 3,
+    "fields": {
+        "topic": "topic 3",
+        "content": "สวัสดีจ้า หัวข้อ 3 จ้า",
+        "name": "mjbook",
+        "email": "sss@g.com",
+        "post_date": "2022-02-11"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$zLyN2jO1AzF81rgBZCfrMm$5sYKA5eO3FdwE27kkFYptEnNj7HP13prhlor/7TT49E=",
+        "last_login": "2022-02-11T08:29:32.941Z",
+        "is_superuser": true,
+        "username": "ya",
+        "first_name": "",
+        "last_name": "",
+        "email": "catzilaza@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-02-10T12:51:17.805Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-02-11T05:49:58.196Z",
+        "user": [
+            "ya"
+        ],
+        "content_type": [
+            "webblog",
+            "webblogformmodel"
+        ],
+        "object_id": "1",
+        "object_repr": "Deo catcat",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-02-11T09:12:41.693Z",
+        "user": [
+            "ya"
+        ],
+        "content_type": [
+            "webblog",
+            "webblogformmodel"
+        ],
+        "object_id": "2",
+        "object_repr": "topic 2 content topic 2 content topic 2 content topic 2 Somo CatCat silverlighter@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-02-11T09:45:27.741Z",
+        "user": [
+            "ya"
+        ],
+        "content_type": [
+            "webblog",
+            "webblogformmodel"
+        ],
+        "object_id": "3",
+        "object_repr": "topic 3 สวัสดีจ้า หัวข้อ 3 จ้า mjbook sss@g.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
