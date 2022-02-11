@@ -17,11 +17,11 @@ class WebblogFormModel(models.Model):
         verbose_name_plural = 'WebblogFormModels'
 
     def __str__(self) -> str:
-        return self.name
+        return self.topic + " " + self.content + " " + self.name + " " + self.email
 
 
 class WebblogForm(ModelForm):
     class Meta:
         model = WebblogFormModel
-        fields = ('topic', 'content', 'name', 'email', 'post_date')
+        fields = ('topic', 'content', 'name', 'email')
 

@@ -2,7 +2,7 @@ from multiprocessing import context
 from urllib import response
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
-from Applications.webblog.models import WebblogForm
+from Applications.webblog.models import WebblogForm, WebblogFormModel
 
 # Create your views here.
 
@@ -14,8 +14,8 @@ def indexWebblog(request):
                    {'pathPic': "webblogPics/picSeminar2.jpg", 'linkpage': "seminarBWebblog", 'content' : "สัมมนา 99709"},
                    {'pathPic': "webblogPics/pic3.jpg", 'linkpage': "tourismPhuket", 'content' : "แหล่งท่องเที่ยวจังหวัดภูเก็ต"},
                    {'pathPic': "webblogPics/picSeminar3.jpg", 'linkpage': "researchSources", 'content' : "แหล่งค้นคว้าวิจัย"},
-                   {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "WebblogFormPage", 'content' : "แบบฟอร์ม"},
-                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
+                   {'pathPic': "webblogPics/picForm.png", 'linkpage': "WebblogFormPage", 'content' : "แบบฟอร์ม"},
+                   {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "WebblogFormDetailPage", 'content' : "Detail for Form"},
                    {'pathPic': "webblogPics/pic1.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
                    {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
                    
@@ -118,3 +118,7 @@ def WebblogFormPage(request):
   context['form'] = form
   return render(request, 'WebblogFormPage.html', context)
 
+def WebblogFormDetailPage(request):
+  contexts = {}
+  contexts['datas'] = WebblogFormModel.objects.all()  
+  return render(request, 'WebblogFormDetailPage.html', contexts)
