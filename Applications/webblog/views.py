@@ -120,7 +120,7 @@ def WebblogFormPage(request):
   return render(request, 'WebblogFormPage.html', context)
 
 def WebblogFormDetailPage(request):
-  contexts = {}
+  #contexts = {}
   #form = WebblogFormModel()
   #context['form'] = form
   #return render(request, 'WebblogFormDetailPage.html', context)
@@ -128,8 +128,8 @@ def WebblogFormDetailPage(request):
   #   <td>{{i.topic}}</td>
   #   <td>{{i.content}}</td>
   #{% endfor%}  
-  contexts['contexts'] = list(WebblogFormModel.objects.values())  
-  print('contexts : ', contexts)
+  contexts = list(WebblogFormModel.objects.values())  
+  print(contexts)
   
-  return render(request, 'WebblogFormDetailPage.html', contexts)
+  return render(request, 'WebblogFormDetailPage.html', {'contexts' : contexts})
  
