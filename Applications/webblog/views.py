@@ -1,4 +1,5 @@
 from multiprocessing import context
+from pydoc_data.topics import topics
 from urllib import response
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
@@ -119,7 +120,16 @@ def WebblogFormPage(request):
   return render(request, 'WebblogFormPage.html', context)
 
 def WebblogFormDetailPage(request):
-  #contexts = {}
-  #contexts['datas'] = WebblogFormModel.objects.all()  
-  #return render(request, 'WebblogFormDetailPage.html', contexts)
-  return render(request, 'WebblogFormDetailPage.html')
+  contexts = {}
+  #form = WebblogFormModel()
+  #context['form'] = form
+  #return render(request, 'WebblogFormDetailPage.html', context)
+  #{% for i in form %}
+  #   <td>{{i.topic}}</td>
+  #   <td>{{i.content}}</td>
+  #{% endfor%}  
+  contexts['contexts'] = list(WebblogFormModel.objects.values())  
+  print('contexts : ', contexts)
+  
+  return render(request, 'WebblogFormDetailPage.html', contexts)
+ 
