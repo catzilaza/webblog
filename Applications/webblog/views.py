@@ -17,7 +17,7 @@ def indexWebblog(request):
                    {'pathPic': "webblogPics/picSeminar3.jpg", 'linkpage': "researchSources", 'content' : "แหล่งค้นคว้าวิจัย"},
                    {'pathPic': "webblogPics/picForm.png", 'linkpage': "WebblogFormPage", 'content' : "แบบฟอร์ม"},
                    {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "WebblogFormDetailPage", 'content' : "Detail for Form"},
-                   {'pathPic': "webblogPics/pic1.jpg", 'linkpage': "DashBoardPage", 'content' : "DashBoardPage"},
+                   {'pathPic': "webblogPics/picDashBoard.png", 'linkpage': "DashBoardPage", 'content' : "DashBoardPage"},
                    {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
                    
                 ]
