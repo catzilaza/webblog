@@ -13,7 +13,7 @@
 
 
 {% block content %}
-    <form action="/Core/templates/WebblogFormPage.html" method="post">
+    <form action="{% url 'WebblogFormPage' %}" method="post">
         {% csrf_token %}
         {% bootstrap_form form %}      
     

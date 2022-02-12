@@ -23,5 +23,5 @@ class WebblogFormModel(models.Model):
 class WebblogForm(ModelForm):
     class Meta:
         model = WebblogFormModel
-        fields = ('topic', 'content', 'name', 'email')
+        fields = ('topic', 'content', 'name', 'email', 'post_date')
 

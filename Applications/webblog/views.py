@@ -108,7 +108,7 @@ def WebblogFormPage(request):
 
   context = {}
   if request.method == "POST":
-        #print(request.POST)
+        print('request.POST', request.POST)
         form = WebblogForm(request.POST)
         if form.is_valid():
             form.save()
@@ -120,14 +120,7 @@ def WebblogFormPage(request):
   return render(request, 'WebblogFormPage.html', context)
 
 def WebblogFormDetailPage(request):
-  #contexts = {}
-  #form = WebblogFormModel()
-  #context['form'] = form
-  #return render(request, 'WebblogFormDetailPage.html', context)
-  #{% for i in form %}
-  #   <td>{{i.topic}}</td>
-  #   <td>{{i.content}}</td>
-  #{% endfor%}  
+  
   contexts = list(WebblogFormModel.objects.values())  
   print(contexts)
   
