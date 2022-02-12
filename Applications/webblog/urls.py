@@ -1,5 +1,5 @@
 from django.urls import path
-from Applications.webblog.views import indexWebblog, seminarAWebblog, seminarBWebblog, tourismPhuket, researchSources, WebblogFormPage, WebblogFormDetailPage
+from Applications.webblog.views import indexWebblog, seminarAWebblog, seminarBWebblog, tourismPhuket, researchSources, WebblogFormPage, WebblogFormDetailPage, DashBoardPage
 
 urlpatterns = [
     path('', indexWebblog, name='indexWebblog'),
@@ -8,6 +8,7 @@ urlpatterns = [
     path('tourismPhuket/', tourismPhuket, name='tourismPhuket'),
     path('researchSources/', researchSources, name='researchSources'),
     path('WebblogFormPage/', WebblogFormPage, name='WebblogFormPage'),
-    path('WebblogFormDetailPage/', WebblogFormDetailPage, name='WebblogFormDetailPage')
+    path('WebblogFormDetailPage/', WebblogFormDetailPage, name='WebblogFormDetailPage'),
+    path('DashBoardPage/', DashBoardPage, name='DashBoardPage')
 
 ]
