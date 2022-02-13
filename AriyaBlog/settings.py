@@ -136,6 +136,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'Core/static/sbAdmin2',
     BASE_DIR / 'Core/static/webblog',
     BASE_DIR / STATIC_URL / 'pictures',
+    BASE_DIR / 'Core/static/shopItems',
     ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
