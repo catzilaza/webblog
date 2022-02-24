@@ -18,7 +18,7 @@ def indexWebblog(request):
                    {'pathPic': "webblogPics/pic3.jpg", 'linkpage': "tourismPhuket", 'content' : "แหล่งท่องเที่ยวจังหวัดภูเก็ต"},
                    {'pathPic': "webblogPics/picSeminar3.jpg", 'linkpage': "researchSources", 'content' : "แหล่งค้นคว้าวิจัย"},
                    {'pathPic': "webblogPics/picForm.png", 'linkpage': "WebblogFormPage", 'content' : "แบบฟอร์ม"},
-                   {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "WebblogFormDetailPage", 'content' : "Detail for Form"},
+                   {'pathPic': "webblogPics/picTable.png", 'linkpage': "WebblogFormDetailPage", 'content' : "Detail of Table"},
                    {'pathPic': "webblogPics/picDashBoard.png", 'linkpage': "DashBoardPage", 'content' : "DashBoardPage"},
                    {'pathPic': "webblogPics/picCovid.png", 'linkpage': "DashBoardPageCovid", 'content' : "DashBoardPage แสดงผู้ติดเชื้อโควิดวันนี้"},
                    
