@@ -5,6 +5,8 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from Applications.webblog.models import WebblogForm, WebblogFormModel
 
+import requests
+
 # Create your views here.
 
 def indexWebblog(request):
@@ -18,7 +20,7 @@ def indexWebblog(request):
                    {'pathPic': "webblogPics/picForm.png", 'linkpage': "WebblogFormPage", 'content' : "แบบฟอร์ม"},
                    {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "WebblogFormDetailPage", 'content' : "Detail for Form"},
                    {'pathPic': "webblogPics/picDashBoard.png", 'linkpage': "DashBoardPage", 'content' : "DashBoardPage"},
-                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "seminarAWebblog", 'content' : "สัมมนา 99708"},
+                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "DashBoardPageCovid", 'content' : "DashBoardPage แสดงผู้ติดเชื้อโควิดวันนี้"},
                    
                 ]
     
@@ -128,4 +130,24 @@ def WebblogFormDetailPage(request):
 
 def DashBoardPage(request):
   return render(request, 'DashBoardPage.html')
+
+def DashBoardPageCovid(request):
+
+  responseData = requests.get("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all")
+  #print(responseData.json())
+  data = responseData.json()
+  #print("ผู้ติดเชื้อรายใหม่",data[0]['new_case'])
+
+  return render(request, 'DashBoardPageCovid.html', {
+        'txn_date' : data[0]['txn_date'],
+        'new_case' : data[0]['new_case'],
+        'total_case' : data[0]['total_case'],
+        'new_case_excludeabroad' : data[0]['new_case_excludeabroad'],
+        'total_case_excludeabroad' : data[0]['total_case_excludeabroad'],
+        'new_death' : data[0]['new_death'],
+        'total_death' : data[0]['total_death'],
+        'new_recovered' : data[0]['new_recovered'],
+        'total_recovered' : data[0]['total_recovered'],
+        'update_date' : data[0]['update_date'],
+    })
  
