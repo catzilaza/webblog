@@ -20,7 +20,7 @@ def indexWebblog(request):
                    {'pathPic': "webblogPics/picForm.png", 'linkpage': "WebblogFormPage", 'content' : "แบบฟอร์ม"},
                    {'pathPic': "webblogPics/oldclocktown.png", 'linkpage': "WebblogFormDetailPage", 'content' : "Detail for Form"},
                    {'pathPic': "webblogPics/picDashBoard.png", 'linkpage': "DashBoardPage", 'content' : "DashBoardPage"},
-                   {'pathPic': "webblogPics/pic2.jpg", 'linkpage': "DashBoardPageCovid", 'content' : "DashBoardPage แสดงผู้ติดเชื้อโควิดวันนี้"},
+                   {'pathPic': "webblogPics/picCovid.png", 'linkpage': "DashBoardPageCovid", 'content' : "DashBoardPage แสดงผู้ติดเชื้อโควิดวันนี้"},
                    
                 ]
     
